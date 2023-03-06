@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const UserController=require('../Controller/UserController.js')
-const seatController=require('../Controller/seatController')
+const UserController=require('../controller/userController.js')
+
 
 
 router.get('/test-me', function (req, res) {
@@ -12,6 +12,7 @@ router.get('/test-me', function (req, res) {
 
 router.post('/register',UserController.registerUser)
 
-router.post('/seat',seatController.createSeat)
+
 
 module.exports = router
+
