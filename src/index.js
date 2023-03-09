@@ -19,5 +19,5 @@ app.use('/okBro',function(req,res){
 })
 let port = 3000
 app.listen(port,function(){
-    console.log('express app running on port'+3000)
+    console.log('express app running on port '+ port)
 })

@@ -12,6 +12,10 @@ router.get('/test-me', function (req, res) {
 
 router.post('/register',UserController.registerUser)
 
+router.get('/alldetails',UserController.getUsersBookingDetails)
+
+router.get('/sbdetails',UserController.getOneUserBookingDetails)
+
 
 
 module.exports = router
